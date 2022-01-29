@@ -19,13 +19,13 @@ def home(request):
   return render(request, "home.html")
 
 # メンバー一覧画面
-def member(request):
-  return render(request, "members.html", content={
+def members(request):
+  return render(request, "members.html", context={
     "members": member_list
   })
 
 # メンバー詳細画面
 def member(request, id):
-  return render(request, "member_detail", context={
+  return render(request, "member_detail.html", context={
     "member": member_list[id]
   })
