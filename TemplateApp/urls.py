@@ -7,4 +7,3 @@ urlpatterns = [
     path("members", views.members, name="members"),
     path("member/<int:id>", views.member, name="member"),
 ]
-
